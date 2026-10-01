@@ -1,46 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARTESANO</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto: Artesano</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&display=swap" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
 </head>
 
 <body>
-    <div id="primeiradiv">
-        <img id="idoso" src="img/hero-atelie.jpg" alt="sinhô">
-        <div id="segundadiv">
-            <h1>ARTESANO</h1>
-            <p id="materia">MATÉRIA | LUZ | ESPAÇO</p>
-            <h2>ESTÚDIO DE OBJETOS | EDIÇÃO DE INVERNO</h2>
-            <p id="ano">2026</p>
+    <section id="hero">
+        <img id="hero-img" src="img/hero-atelie.jpg" alt="Imagem de Idoso" />
+        <div class="hero-content">
+            <h1 id="hero-title">Artesano</h1>
+            <p class="hero-description" id="content-descrition">
+                MATÉRIA <span id="light-description">LUZ</span> ESPAÇO
+            </p>
+            <p class="p-themes">
+                <span id="content-themes">Estúdio de Objetos</span> Edição de Inverno
+            </p>
+            <p class="hero-description" id="year-description">2026</p>
         </div>
-    </div>
-    <div>
-        <ul>
-            <li>INÍCIO</li>
-            <li>ESTÚDIO</li>
-            <li>COLEÇÕES</li>
-            <li>A</li>
-            <li>GALERIA</li>
-            <li>DEPOIMENTO</li>
-            <li>CONTATO</li>
+    </section>
 
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a class="menu-link" href="#inicio">Início</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="#estudio">Estúdio</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="#colecoes">Coleções</a>
+            </li>
+            <li class="menu-item">
+                <a id="menu-logo" class="menu-link" href="#sobre">A</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="#galeria">Galeria</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="#depoimentos">Depoimentos</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="#contato">Contato</a>
+            </li>
         </ul>
-    </div>
+    </nav>
+    <section id="hero-objetcs">
+        <h2 class="h-objetcs-title"> Fazemos objetos que duram mais que nós </h1>
+        <p> Um estúdio pequeno em uma rua sem saída: bairro, madeira e vidro
+            trabalhados devagar, em edições curtas. Cada peça sai numerada, assinada e
+            com o nome de quem a fez no verso.
+        </p>
+        <div id="menu-objects">
+            <div>
+                <img class="img-objects" src="img/icone-materia.svg" alt="Ícone caixa" />
+                <span> Matéria </span>
+            </div>
+            <div>
+                <img class="img-objects" src="img/icone-desenho.svg" alt="Ícone lápis" />
+                <span> Desenho </span>
+            </div>
+            <div>
+                <img class="img-objects" src="img/icone-forma.svg" alt="Ícone taça" />
+                <span> Fôrma </span>
+            </div>
+            <div>
+                <img  class="img-objects" src="img/icone-entrega.svg" alt="Ícone caixa" />
+                <span> Entrega </span>
+            </div>
+        </div>
 
-
+    </section>
 </body>
 
 </html>

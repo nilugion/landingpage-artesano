@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-transform: uppercase;
+    font-family: var(--font-primary);
 }
 
-body, html{
-  height: 100%;
+body, html {
+    height: 100%;
 }
