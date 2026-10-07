@@ -148,6 +148,16 @@
   font-size: var(--font-size-sm);
 }
 
+.words{
+    text-decoration: none;
+  color: var(--color-text-gray-1);
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--spacing-md);
+
+}
+
+
+
 #menu-logo {
   padding: 7px 10px;
   display: block;
@@ -164,38 +174,53 @@
 /*NOVA SEÇÃO DA PAGINA*/
 
 #hero-objetcs {
-  background-color:#f4f4f5;
   height:75vh;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:30px;
+  gap:70px;
 
 }
 
-.h-objects-title { 
+section.light {
+  background-color: #f4f4f5;  
+  color:#1f2124; 
+}
+
+section.dark{
+  background-color: #1f2124;
+  color: #f4f4f5;
+}
+
+
+.h-objetcs-title { 
+letter-spacing: 0.2rem;
 
 }
- #hero-objects p {
-  max-width: 200px;
-  text-align: justify;
-  
+
+ #hero-objetcs p {
+  max-width: var(--size-2xl); 
+  font-size: var(--font-size-lg);
+  text-align: center;
+
 }
 
 #menu-objects { 
 display: flex;
-gap:40px;
+gap:100px;
 
 }
 
 #menu-objects div { 
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
+
 }
 
 #menu-objects div img { 
 width: 30px;
-
 }
 
