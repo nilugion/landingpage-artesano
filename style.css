@@ -3,7 +3,9 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  overflow: hidden;
+  min-height: 94vh;
+  width: 100%;
   text-transform: uppercase;
 }
 
@@ -16,7 +18,7 @@
   color: var(--color-text-white);
   font-weight: var(--font-weight-light);
   z-index: 1;
-  height: 50%;
+  height: 100%;
   width: 100%;
 }
 
@@ -53,9 +55,12 @@
   font-size: var(--font-size-sm);
 }
 
-#content-descrition {
+#content-description {
   font-size: var(--font-size-lg);
   background-color: rgb(255, 255, 255, 0.2);
+  padding: var(--spacing-md);
+  width: 50%;
+  align-self: center;
 
 }
 
@@ -71,25 +76,12 @@
   letter-spacing: var(--spacing-md);
 }
 
-#hero-descrition::before,
-#hero-descrition::after {
-  z-index: 2;
+#content-description::before,
+#content-description::after {
   content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.7;
-  background-color: var(--color-background-gray-2);
-}
-
-#content-descrition::before,
-#content-descrition::after {
-  content: "";
-  border-top: 2px solid var(--color-gray-line);
+  border-top: 1px solid var(--color-gray-line);
   font-weight: var(--font-weight-light);
-  width: var(--size-xl);
+  width: 10%;
   display: block;
 }
 
@@ -198,7 +190,10 @@ section.dark {
 
 
 .h-objetcs-title {
+  font-family: 'Cormorant Garamond', serif;
   letter-spacing: 0.2rem;
+  font-weight: 400;
+  font-size: 2.5rem;
 
 }
 
@@ -210,14 +205,15 @@ section.dark {
 }
 
 #menu-objects {
-  
+  text-transform: uppercase;
   display: flex;
   gap: 100px;
 
 }
 
 .img-objects { 
-  object-fit: cover;
+  display: block;
+  object-fit: contain;
 }
 
 .underline::after {
@@ -271,7 +267,9 @@ section.dark {
   padding: 25px; 
   text-align: left;
 }
+
  #colecoes table td {
+  font-size:20px;
   padding: 25px;
   text-align: left;
   border-top: 1px solid #3a3d41;
