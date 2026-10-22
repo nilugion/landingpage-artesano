@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto: Artesano</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&display=swap" />
     <link rel="stylesheet" href="variables.css" />
@@ -57,33 +59,33 @@
     </nav>
     <section id="hero-objetcs" class="light">
         <h2 class="h-objetcs-title"> Fazemos objetos que duram mais que nós. </h1>
-            <p> Um estúdio pequeno em uma rua sem saída: bairro, madeira e vidro
+            <p> Um estúdio pequeno em uma rua sem saída: barro, madeira e vidro
                 trabalhados devagar, em edições curtas. Cada peça sai numerada, assinada e
                 com o nome de quem a fez no verso.
             </p>
             <div id="menu-objects">
-                <div>
+                <div class="div-img-objects">
                     <div class="underline">
                         <img class="img-objects" src="img/icone-materia.svg" alt="Ícone caixa" />
 
                     </div>
                     <span> Matéria </span>
                 </div>
-                <div>
+                <div class="div-img-objects">
                     <div class="underline">
                         <img class="img-objects" src="img/icone-desenho.svg" alt="Ícone lápis" />
 
                     </div>
                     <span> Desenho </span>
                 </div>
-                <div>
+                <div class="div-img-objects">
                     <div class="underline">
                         <img class="img-objects" src="img/icone-forma.svg" alt="Ícone taça" />
 
                     </div>
                     <span> Fôrma </span>
                 </div>
-                <div>
+                <div class="div-img-objects">
                     <div class="underline">
 
                         <img class="img-objects" src="img/icone-entrega.svg" alt="Ícone caixa" />
@@ -166,6 +168,49 @@
         </p>
 
         <a href="#"> PEDIR O CATÁLOGO </a>
+    </section>
+    <section id="contato" class="light">
+        <h2 class="section-tittle">
+            Peça o Catálogo</h2>
+        <p>A edição de inverno abre 14 de setembro. Deixe seu contato e enviamos.
+            <br />
+            O catálogo impresso, com as medidas e os preços de cada peça.
+        </p>
+        <form>
+            <div class="form-inline">
+                <div>
+                    <label>Nome</label>
+                    <input type="text" name="name" minlenght="3" required>
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" name="email" required>
+                </div>
+            </div>
+            <span class="label-block">O que te interessa</span>
+            <div class="input-radio">
+                <input type="radio" id="catalogo" name="interesse" value="catalogo">
+                <label for="catalogo"> Só o catálogo</label>
+                <input type="radio" id="peca" name="interesse" value="peca">
+                <label for="peca">Uma peça específica</label>
+                <input type="radio" id="encomenda" name="interesse" value="encomenda">
+                <label for="encomenda">Encomenda sob medida</label>
+            </div>
+            <span class="label-block">O que mais encaixa no seu estilo</span>
+            <div id="input-checkbox">
+                <input type="checkbox" id="terracota">
+                <label for="terracota">Terracota</label>
+                <input type="checkbox" id="offwhite">
+                <label for="offwhite">Off white</label>
+                <input type="checkbox" id="black">
+                <label for="black">Black</label>
+            </div>
+            <div class="input-recado">
+                <label>Recado (opcional)</label>
+                <textarea> Escreva aqui o seu recado...</textarea>
+            </div>
+            <button class="dark">Enviar o pedido</button>
+        </form>
     </section>
 </body>
 

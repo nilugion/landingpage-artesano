@@ -59,9 +59,9 @@
   font-size: var(--font-size-lg);
   background-color: rgb(255, 255, 255, 0.2);
   padding: var(--spacing-md);
-  width: 50%;
+  width: 55%;
   align-self: center;
-
+  border-radius: 5px;
 }
 
 #content-themes {
@@ -70,7 +70,7 @@
 
 #hero-title {
   font-family: var(--font-primary);
-  font-weight: var(--font-weight-normal);
+  font-weight: normal;
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-normal);
   letter-spacing: var(--spacing-md);
@@ -81,8 +81,9 @@
   content: "";
   border-top: 1px solid var(--color-gray-line);
   font-weight: var(--font-weight-light);
-  width: 10%;
-  display: block;
+  width: 50px;
+  padding: 0 10px;
+
 }
 
 #year-description::before,
@@ -133,9 +134,6 @@
   gap: var(--spacing-lg);
 }
 
-.menu-item {
-}
-
 .menu-link {
   text-decoration: none;
   color: var(--color-text-gray-1);
@@ -169,7 +167,7 @@
 /*NOVA SEÇÃO DA PAGINA*/
 
 #hero-objetcs {
-  height: 75vh;
+  height: 99vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,12 +176,13 @@
 
 }
 
-section.light {
+
+.light {
   background-color: #f4f4f5;
   color: #1f2124;
 }
 
-section.dark {
+.dark {
   background-color: #1f2124;
   color: #f4f4f5;
 }
@@ -193,13 +192,14 @@ section.dark {
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: 0.2rem;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 50px;
 
 }
 
 #hero-objetcs p {
-  max-width: var(--size-2xl);
+  max-width: var(--size-4xl);
   font-size: var(--font-size-lg);
+  opacity: 0.7;
   text-align: center;
 
 }
@@ -207,14 +207,19 @@ section.dark {
 #menu-objects {
   text-transform: uppercase;
   display: flex;
-  gap: 100px;
+  gap: 15rem;
 
 }
 
-.img-objects { 
-  display: block;
-  object-fit: contain;
+.div-img-objects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
 }
+
+.underline {}
 
 .underline::after {
   content: "";
@@ -223,9 +228,16 @@ section.dark {
   margin-top: var(--spacing-lg);
   width: var(--size-lg);
   border-bottom: 1px solid;
-  padding: 10px; 
+  padding: 10px;
 
 }
+
+.img-objects {
+  height: 64px;
+  width: 64px;
+  object-fit: cover;
+}
+
 #menu-objects div {
   display: flex;
   flex-direction: column;
@@ -234,25 +246,22 @@ section.dark {
 
 }
 
-#menu-objects div img {
-  width: 30px;
-}
-
 #colecoes {
-  font-family: var(--font-primary) ;
+  font-family: var(--font-primary);
   min-height: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding:  50px 0 ;
+  padding: 50px 0;
 
 }
 
 #colecoes h2 {
+  font-family: 'Cormorant Garamond', serif;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 #colecoes table {
@@ -261,21 +270,23 @@ section.dark {
   font-size: 25px;
 
 }
+
 #colecoes th {
   text-transform: uppercase;
   font-weight: normal;
-  padding: 25px; 
+  padding: 25px;
   text-align: left;
 }
 
- #colecoes table td {
-  font-size:20px;
+#colecoes table td {
+  font-size: 20px;
   padding: 25px;
   text-align: left;
   border-top: 1px solid #3a3d41;
   border-bottom: 1px solid #3a3d41;
 
 }
+
 #colecoes p {
   text-align: center;
   font-size: 24px;
@@ -285,10 +296,63 @@ section.dark {
 #colecoes a {
   text-decoration: none;
   text-align: center;
-  font-size: 25px;
+  font-weight: 100px;
   color: #f4f4f5;
   border: 1px solid #f4f4f5;
   padding: 15px;
-  border-radius: 20px;
-  width: 200px;
+  border-radius: 30px;
+  width: 250px;
+}
+
+#contato {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+}
+
+#contato form .form-inline {
+  display: flex;
+  gap: 10px;
+
+}
+
+#contato form .form-inline label {
+  display: block;
+
+}
+
+form .form-inline input,
+form .form-inline div {
+  width: 100%;
+  font-family:  "Jost", sans-serif;
+
+}
+
+form input,
+form textarea {
+  padding: 6px;
+
+}
+
+form .input-recado textarea {
+  width: 100%;
+  height: 150px;
+  opacity: 0.8;
+}
+
+#contato button {
+  margin: 20px auto 0;
+  display: block;
+  text-decoration: none;
+  font-weight: 100px;
+  font-size: large;
+  border: 1px solid #f4f4f5;
+  padding: 15px;
+  border-radius: 30px;
+  width: 250px; 
+
 }
